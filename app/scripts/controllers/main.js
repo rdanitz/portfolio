@@ -7,10 +7,11 @@
  * # MainCtrl
  * Controller of the app
  */
-angular.module('app')
-  .controller('MainCtrl', function ($scope) {
+angular.module('annaApp')
+  .controller('MainCtrl', function ($scope, Projects) {
+    $scope.projects = Projects;
     $scope.frames = [];
-    
+
     for (var i=0; i<=17;i++) {
       $scope.frames.push({});
     }
