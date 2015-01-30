@@ -6,7 +6,7 @@
  * @description
  * # frame
  */
-angular.module('app')
+angular.module('annaApp')
   .directive('frame', function () {
     return {
       restrict: 'A',
