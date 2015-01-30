@@ -1,0 +1,7 @@
+[
+  {
+    name: "foo",
+    description: "foo descr",
+    count: 3
+  }
+]

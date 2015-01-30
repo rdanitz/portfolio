@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('annaApp', ['ngRoute', 'underscore']);
 
 app.config(function ($routeProvider) {
   $routeProvider
@@ -17,10 +17,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-    .when('/project',
+    .when('/projects/:project',
       {
         templateUrl: 'views/project.html',
-        controller: ''
+        controller: 'ProjectCtrl'
       })
     .otherwise(
       {
