@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-var app = angular.module('annaApp', ['ngRoute', 'underscore']);
+var app = angular.module('annaApp', ['ngRoute']);
 
 app.config(function ($routeProvider) {
   $routeProvider
