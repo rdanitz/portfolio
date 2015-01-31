@@ -101,29 +101,27 @@ img {
 }
 
 .anna {
-  display: block;
+  display: inline-block;
   font: 2em 'Gill Sans';
   font-weight: lighter;
   font-family: sans-serif;
-  vertical-align: middle;
-  margin: auto;
   text-align: center;
   text-transform: uppercase;
 }
 
 .robert {
-  display: block;
   font: 1em 'Gill Sans';
   font-weight: lighter;
   font-family: sans-serif;
   vertical-align: middle;
-  margin: auto;
   text-align: center;
   /* text-transform: uppercase; */
 }
 
 .vertical-center-wrapper {
-  display: flex;
+  display: -webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
 }
 
 a {
