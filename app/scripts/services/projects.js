@@ -8,7 +8,7 @@
  * Service in the annaApp.
  */
 angular.module('annaApp')
-  .factory('Projects', function (_) {
+  .factory('Projects', function () {
 
     var projects = [
       {
