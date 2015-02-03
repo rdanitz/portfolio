@@ -51,16 +51,16 @@
 }
 
 .project-header {
+  margin-top: 0;
+  border-bottom: 4px solid black;
   font-family: 'Gill Sans', sans serif; 
   font-size: 2em;
   font-weight: lighter;
   text-align: left;
-  margin-top: 0;
-  border-bottom: 4px solid black;
 }
 
 .project-descr {
-  height: 100%;
+  font-family: 'BLOKKNeue-Regular', sans serif;
   padding-top: 4vw;
   padding-left: 2vw;
   padding-right: 4vw;
