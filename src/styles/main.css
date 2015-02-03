@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'BLOKKNeue-Regular';
+    src: url('fonts/BLOKKNeue-Regular.eot');
+    src: url('fonts/BLOKKNeue-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BLOKKNeue-Regular.woff') format('woff'),
+         url('fonts/BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .debug {
   box-sizing: border-box;
   border: 2px dotted red;
@@ -8,9 +18,8 @@
   margin-top: 0;
   padding-left: 4vw;
   padding-right: 0;
-  font: 2.5em 'Gill Sans';
+  font-size: 2.5em;
   font-weight: lighter;
-  font-family: sans-serif;
   text-align: center;
 }
 
@@ -18,14 +27,13 @@
   margin-top: 0;
   padding-left: 2vw;
   padding-right: 2vw;
-  font: 2.5em 'Gill Sans';
+  font-size: 2.5em;
   font-weight: lighter;
-  font-family: sans-serif;
   text-align: right;
 }
 
 .project-image {
-  /* width: 100%; */
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 4vw;
@@ -36,18 +44,16 @@
 }
 
 .project-text {
-  font: 1em 'Gill Sans';
   font-weight: lighter;
-  font-family: sans-serif;
   text-align: justify;
   margin: auto;
   vertical-align: middle;
 }
 
 .project-header {
-  font: 24px 'Gill Sans';
+  font-family: 'Gill Sans', sans serif; 
+  font-size: 2em;
   font-weight: lighter;
-  font-family: sans-serif;
   text-align: left;
   margin-top: 0;
   border-bottom: 4px solid black;
@@ -71,13 +77,18 @@
 
 .frame-text {
   display: none;
-  font: 100% 'Gill Sans';
+  font-family: 'BLOKKNeue-Regular', sans serif;
   font-weight: lighter;
-  font-family: sans-serif;
-  /* font-size: 200%; */
-  text-align: center;
-  /* vertical-align: middle; */
+  text-align: left;
   margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.frame-text-inner {
+  overflow: hidden;
+  /* margin-left: -1em; */
+  /* margin-right: -1em; */
 }
 
 img {
@@ -100,30 +111,37 @@ img {
   display: block;
 }
 
-.anna {
+.me {
   display: block;
-  font: 2em 'Gill Sans';
+  font-family: 'Gill Sans', sans serif; 
+  font-size: 2em;
   font-weight: lighter;
-  font-family: sans-serif;
   vertical-align: middle;
-  margin: auto;
   text-align: center;
   text-transform: uppercase;
 }
 
-.robert {
+.you {
   display: block;
-  font: 1em 'Gill Sans';
+  font-family: 'Gill Sans', sans serif; 
   font-weight: lighter;
-  font-family: sans-serif;
   vertical-align: middle;
-  margin: auto;
   text-align: center;
   /* text-transform: uppercase; */
 }
 
 .vertical-center-wrapper {
-  display: flex;
+  display:         box;
+  display:    -moz-box;
+  display: -webkit-box;
+
+          box-pack:center;
+     -moz-box-pack:center;
+  -webkit-box-pack:center;
+  
+          box-align:center;
+     -moz-box-align:center;
+  -webkit-box-align:center;
 }
 
 a {
