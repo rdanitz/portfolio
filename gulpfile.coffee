@@ -34,7 +34,7 @@ gulp.task 'riot', () ->
 
 gulp.task 'coffee', () ->
   gulp.src paths.src + '**/*.coffee'
-    .pipe (coffee().on 'error', util.log)
+    .pipe (coffee({ bare: true }).on 'error', util.log)
     .pipe (gulp.dest paths.dest)
 
 gulp.task 'dist', ['copy', 'riot', 'coffee']
