@@ -7,7 +7,7 @@
       <div class="frame-image" if={ thumb }>
         <img src={ thumb ? thumb : 'images/zero.png' } width="100%"></img>
       </div>
-      <span class={ _class } if={ !thumb }><a href="">{ name }</a></span>
+      <span class={ type } if={ !thumb }><a href="">{ name }</a></span>
     </div>
   </div>
 
