@@ -23,7 +23,7 @@
     
     <div class="pure-u-1-4">
       <div class="nav2">
-        <span><a href="/">^</a></span>
+        <span><a href="#">^</a></span>
       </div>
     </div>
   </div>
