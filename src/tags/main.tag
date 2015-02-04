@@ -16,12 +16,12 @@
   @show = 'gallery'
   
   @me =
-    _class: 'me'
+    type: 'me'
     name: 'My Name'
     portrait: ''
 
   @you =
-    _class: 'you'
+    type: 'you'
     name: '@rdanitz'
 
   @project =
@@ -42,21 +42,29 @@
     thumb: 'images/thumb.png'
     portrait: 'images/portrait.png'
 
-  riot.route (to) ->
-    if to == ''
-      self.show = 'gallery'
-      riot.update()
-      return
+  @to_gallery = () ->
+    self.show = 'gallery'
+    riot.update()
 
+  @to_project = (to) ->
     self.show = 'project'
     project = _.first (_.filter self.projects, (i) -> i.name == to)
-    console.log project
     self.project.name = project.name
-    self.project.abstract = project.abstract
     self.project.description = project.description
     self.project.thumb = project.thumb
     self.project.portrait = project.portrait
-    console.log self.project
     riot.update()
+
+  riot.route (to) ->
+    if to == ''
+      self.to_gallery()
+    else
+      self.to_project(to)
+
+  riot.route.exec (to)->
+    if to == ''
+      self.to_gallery()
+    else
+      self.to_project(to)
 
 </main>
