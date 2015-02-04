@@ -5,13 +5,13 @@ self = this;
 this.show = 'gallery';
 
 this.me = {
-  _class: 'me',
+  type: 'me',
   name: 'My Name',
   portrait: ''
 };
 
 this.you = {
-  _class: 'you',
+  type: 'you',
   name: '@rdanitz'
 };
 
@@ -33,25 +33,38 @@ this.projects = _.map(_.range(1, 14), function(i) {
   };
 });
 
-riot.route(function(to) {
+this.to_gallery = function() {
+  self.show = 'gallery';
+  return riot.update();
+};
+
+this.to_project = function(to) {
   var project;
-  if (to === '') {
-    self.show = 'gallery';
-    riot.update();
-    return;
-  }
   self.show = 'project';
   project = _.first(_.filter(self.projects, function(i) {
     return i.name === to;
   }));
-  console.log(project);
   self.project.name = project.name;
-  self.project.abstract = project.abstract;
   self.project.description = project.description;
   self.project.thumb = project.thumb;
   self.project.portrait = project.portrait;
-  console.log(self.project);
   return riot.update();
+};
+
+riot.route(function(to) {
+  if (to === '') {
+    return self.to_gallery();
+  } else {
+    return self.to_project(to);
+  }
+});
+
+riot.route.exec(function(to) {
+  if (to === '') {
+    return self.to_gallery();
+  } else {
+    return self.to_project(to);
+  }
 });
 
 });
