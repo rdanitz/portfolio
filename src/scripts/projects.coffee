@@ -1,7 +1,7 @@
 'use strict'
 
 projects = _.map (_.range 1, 14), (i) ->
-  name: 'Project ' + i
+  title: 'Project ' + i
   abstract: """
    High Life hella mlkshk, Banksy four dollar toast American Apparel occupy seitan. Ethical hashtag keytar normcore Schlitz drinking vinegar. Mlkshk synth gastropub flannel.
   """

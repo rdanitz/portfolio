@@ -14,6 +14,11 @@
   background-color: gold;
 }
 
+.debug2 {
+  box-sizing: border-box;
+  border: 2px dotted blue;
+}
+
 .nav1 {
   margin-top: 0;
   padding-left: 4vw;
@@ -71,8 +76,17 @@
   height: 100%;
 }
 
+img {
+  display:block;
+}
+
+.frame {
+  overflow: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .frame-image {
-  display: block;
 }
 
 .frame-text {
@@ -80,19 +94,8 @@
   font-family: 'BLOKKNeue-Regular', sans serif;
   font-weight: lighter;
   text-align: left;
-  margin: auto;
   padding-left: 1em;
   padding-right: 1em;
-}
-
-.frame-text-inner {
-  overflow: hidden;
-  /* margin-left: -1em; */
-  /* margin-right: -1em; */
-}
-
-img {
-  display:block;
 }
 
 .frame > .frame-image {
@@ -113,21 +116,30 @@ img {
 
 .me {
   display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
   font-family: 'Gill Sans', sans serif; 
   font-size: 2em;
   font-weight: lighter;
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
+  -webkit-order: -1;
 }
 
 .you {
   display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
   font-family: 'Gill Sans', sans serif; 
   font-weight: lighter;
   vertical-align: middle;
   text-align: center;
-  /* text-transform: uppercase; */
+  -webkit-order: 1000;
 }
 
 .vertical-center-wrapper {
@@ -138,7 +150,7 @@ img {
           box-pack:center;
      -moz-box-pack:center;
   -webkit-box-pack:center;
-  
+
           box-align:center;
      -moz-box-align:center;
   -webkit-box-align:center;
@@ -160,4 +172,64 @@ body, html {
   padding: 0;
 /*   padding-top: 20px; */
 /*   padding-bottom: 20px; */
+}
+
+/* Rearranging based on screen size */
+
+.gallery {
+  display: -webkit-flex;
+}
+
+@media screen and (max-width: 35.5em) {
+  .me {
+    -webkit-order: -1;
+  }
+
+  .frame-text {
+    min-height: 100vw;
+  }
+}
+
+@media screen and (min-width: 35.5em) and (max-width: 48em) {
+  .me {
+    -webkit-order: -1;
+  }
+  
+  .frame {
+    min-height: 50vw;
+    max-height: 50vw;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .me {
+    -webkit-order: 7;
+  }
+  
+  .frame {
+    min-height: 33vw;
+    max-height: 33vw;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 80em) {
+  .me {
+    -webkit-order: 9;
+  }
+  
+  .frame {
+    min-height: 25vw;
+    max-height: 25vw;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .me {
+    -webkit-order: 13;
+  }
+  
+  .frame {
+    min-height: 20vw;
+    max-height: 20vw;
+  }
 }

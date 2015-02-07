@@ -1,22 +1,29 @@
 <gallery>
-  <div class="pure-g">
-    <div class="pure-u-1-5 frame vertical-center-wrapper" each={ frames() }>
-      <div class="frame-text" if={ description }>
-        <p class="frame-text-inner"><a href="#{ name }">{ abstract }</a></p>
+  <div class="pure-g gallery" >
+    <div class="me pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4 pure-u-xl-1-5">
+      <span><a href="">{ me.name }</a></span>
+    </div>
+
+    <div class="frame pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4 pure-u-xl-1-5" style="-webkit-order: { parent.index(title) };" each={ projects } >
+      <div class="frame-text" height={ this.width() } >
+        <p><a href="#{ title }">{ abstract }</a></p>
       </div>
-      <div class="frame-image" if={ thumb }>
-        <img src={ thumb ? thumb : 'images/zero.png' } width="100%"></img>
+      <div class="frame-image pure-image">
+        <img src={ thumb } width="100%"></img>
       </div>
-      <span class={ type } if={ !thumb }><a href="">{ name }</a></span>
+    </div>
+    
+    <div class="you pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4 pure-u-xl-1-5">
+      <span><a href="">{ you.name }</a></span>
     </div>
   </div>
 
   <script type="coffeescript">
+    self = @
+    @me = opts.me
+    @you = opts.you
     @projects = opts.projects
-    @frames = () -> 
-      [].concat (@projects.slice 0, Math.ceil(_.size(@projects)/2)),
-                opts.me,
-                (@projects.slice Math.ceil(_.size(@projects)/2)),
-                opts.you
+    @index = (title) ->
+      2 * _.indexOf (_.pluck self.projects, 'title'), title
   </script>
 </gallery>
