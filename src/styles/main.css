@@ -76,27 +76,24 @@
   height: 100%;
 }
 
-img {
-  display:block;
-}
-
 .frame {
+  display: -webkit-flex;
   overflow: auto;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .frame-image {
+  width: 100%;
 }
 
 .frame-text {
-  display: none;
   font-family: 'BLOKKNeue-Regular', sans serif;
   font-weight: lighter;
   text-align: left;
   padding-left: 1em;
   padding-right: 1em;
 }
+
+/* on hover over project picture -> show project description */
 
 .frame > .frame-image {
   display: block;
@@ -115,45 +112,27 @@ img {
 }
 
 .me {
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  margin: auto;
   font-family: 'Gill Sans', sans serif; 
   font-size: 2em;
   font-weight: lighter;
-  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
+}
+
+.me-order {
   -webkit-order: -1;
 }
 
 .you {
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  margin: auto;
   font-family: 'Gill Sans', sans serif; 
   font-weight: lighter;
-  vertical-align: middle;
   text-align: center;
-  -webkit-order: 1000;
 }
 
-.vertical-center-wrapper {
-  display:         box;
-  display:    -moz-box;
-  display: -webkit-box;
-
-          box-pack:center;
-     -moz-box-pack:center;
-  -webkit-box-pack:center;
-
-          box-align:center;
-     -moz-box-align:center;
-  -webkit-box-align:center;
+.you-order {
+  -webkit-order: 1000;
 }
 
 a {
@@ -170,8 +149,6 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-/*   padding-top: 20px; */
-/*   padding-bottom: 20px; */
 }
 
 /* Rearranging based on screen size */
@@ -181,17 +158,18 @@ body, html {
 }
 
 @media screen and (max-width: 35.5em) {
-  .me {
+  .me-order {
     -webkit-order: -1;
   }
 
-  .frame-text {
+  .frame {
     min-height: 100vw;
+    max-height: 100vw;
   }
 }
 
 @media screen and (min-width: 35.5em) and (max-width: 48em) {
-  .me {
+  .me-order {
     -webkit-order: -1;
   }
   
@@ -202,7 +180,7 @@ body, html {
 }
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
-  .me {
+  .me-order {
     -webkit-order: 7;
   }
   
@@ -213,7 +191,7 @@ body, html {
 }
 
 @media screen and (min-width: 64em) and (max-width: 80em) {
-  .me {
+  .me-order {
     -webkit-order: 9;
   }
   
@@ -224,7 +202,7 @@ body, html {
 }
 
 @media screen and (min-width: 80em) {
-  .me {
+  .me-order {
     -webkit-order: 13;
   }
   
