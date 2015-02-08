@@ -1,8 +1,8 @@
 <project>
   <div class="pure-g max-height">
     <div class="pure-u-3-4 vertical-center-wrapper">
-      <div class="project-image">
-        <img width="100%" src="{ project.portrait }"></img>
+      <div class="project-image noselect">
+        <img width="100%" src="{ project.portraits[current] }"></img>
       </div>
     </div>
    
@@ -16,19 +16,24 @@
     </div>
     
     <div class="pure-u-3-4">
-      <div class="nav1">
-        <span><a>&lt;</a></span>&nbsp;&nbsp;<span><a>&gt;</a></span>
+      <div class="nav1 noselect">
+        <span><a onclick={ prev } >&lt;</a></span>&nbsp;&nbsp;
+        <span><a onclick={ next } >&gt;</a></span>
       </div>
     </div>
     
     <div class="pure-u-1-4">
-      <div class="nav2">
+      <div class="nav2 noselect">
         <span><a href="#">^</a></span>
       </div>
     </div>
   </div>
   
   <script type="coffeescript">
+    self = @
+    @current = 0
     @project = opts.bind
+    @prev = () -> self.current = (self.current - 1 + _.size self.project.portraits) % (_.size self.project.portraits)
+    @next = () -> self.current = (self.current + 1) % (_.size self.project.portraits)
   </script>
 </project>

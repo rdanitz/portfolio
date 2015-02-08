@@ -28,7 +28,7 @@
       abstract: ''
       description: ''
       thumb: ''
-      portrait: ''
+      portraits: ''
 
     @projects = projects
 
@@ -42,7 +42,7 @@
       self.project.title = project.title
       self.project.description = project.description
       self.project.thumb = project.thumb
-      self.project.portrait = project.portrait
+      self.project.portraits = project.portraits
       riot.update()
 
     riot.route (to) ->
