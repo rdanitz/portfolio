@@ -18,7 +18,7 @@ this.project = {
   abstract: '',
   description: '',
   thumb: '',
-  portrait: ''
+  portraits: ''
 };
 
 this.projects = projects;
@@ -37,7 +37,7 @@ this.to_project = function(to) {
   self.project.title = project.title;
   self.project.description = project.description;
   self.project.thumb = project.thumb;
-  self.project.portrait = project.portrait;
+  self.project.portraits = project.portraits;
   return riot.update();
 };
 
