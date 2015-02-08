@@ -1,15 +1,15 @@
 <project>
-  <div class="pure-g max-height">
-    <div class="pure-u-3-4 vertical-center-wrapper">
-      <div class="project-image noselect">
-        <img width="100%" src="{ project.portraits[current] }"></img>
+  <div class="pure-g">
+    <div class="pure-u-3-4">
+      <div class="project-image noselect2">
+        <img src={ project.portraits[current] } ></img>
       </div>
     </div>
    
     <div class="pure-u-1-4">
       <div class="project-descr">
-        <h1 class="project-header">{ project.name }</h1>
-        <div class="project-text vertical-center-wrapper">
+        <h1 class="project-header">{ project.title }</h1>
+        <div class="project-text">
           <p>{ project.description }</p>
         </div>
       </div>
@@ -24,7 +24,7 @@
     
     <div class="pure-u-1-4">
       <div class="nav2 noselect">
-        <span><a href="#">^</a></span>
+        <span><a href="#gallery">^</a></span>
       </div>
     </div>
   </div>
