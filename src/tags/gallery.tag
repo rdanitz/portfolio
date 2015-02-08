@@ -10,7 +10,7 @@
       <div class="frame-text">
         <p><a href="#{ title }">{ abstract }</a></p>
       </div>
-      <div class="frame-image pure-image">
+      <div class="frame-image pure-image noselect">
         <img src={ thumb } width="100%"></img>
       </div>
     </div>
