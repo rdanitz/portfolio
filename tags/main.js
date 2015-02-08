@@ -1,17 +1,14 @@
-riot.tag('main', '<div if="{ show == \'gallery\' }"><gallery projects="{ projects }" me="{ me }" you="{ you }"></gallery></div><div if="{ show == \'project\' }"><project bind="{ project }"></project></div>', function(opts) {var self;
+riot.tag('main', '<div if="{ show == \'gallery\' }" ><gallery projects="{ projects }" me="{ me }" you="{ you }" ></gallery></div><div if="{ show == \'project\' }" ><project bind="{ project }" ></project></div><div if="{ show == \'about\' }" ><about bind="{ me }" ></about></div>', function(opts) {var f, self;
 
 self = this;
 
 this.show = 'gallery';
 
-this.me = {
-  name: 'My Name',
-  portrait: ''
-};
+this.me = me;
 
-this.you = {
-  name: '@rdanitz'
-};
+this.you = you;
+
+this.projects = projects;
 
 this.project = {
   title: '',
@@ -21,40 +18,37 @@ this.project = {
   portraits: ''
 };
 
-this.projects = projects;
-
-this.to_gallery = function() {
-  self.show = 'gallery';
-  return riot.update();
-};
-
-this.to_project = function(to) {
+this.to = function(to, id) {
   var project;
-  self.show = 'project';
-  project = _.first(_.filter(self.projects, function(i) {
-    return i.title === to;
-  }));
-  self.project.title = project.title;
-  self.project.description = project.description;
-  self.project.thumb = project.thumb;
-  self.project.portraits = project.portraits;
+  switch (to) {
+    case '':
+      self.show = 'gallery';
+      break;
+    case 'gallery':
+      self.show = 'gallery';
+      break;
+    case 'project':
+      self.show = 'project';
+      project = _.first(_.filter(self.projects, function(i) {
+        return i.title === id;
+      }));
+      self.project.title = project.title;
+      self.project.description = project.description;
+      self.project.thumb = project.thumb;
+      self.project.portraits = project.portraits;
+      break;
+    case 'about':
+      self.show = 'about';
+  }
   return riot.update();
 };
 
-riot.route(function(to) {
-  if (to === '') {
-    return self.to_gallery();
-  } else {
-    return self.to_project(to);
-  }
-});
+f = function(to, id) {
+  return self.to(to, id);
+};
 
-riot.route.exec(function(to) {
-  if (to === '') {
-    return self.to_gallery();
-  } else {
-    return self.to_project(to);
-  }
-});
+riot.route(f);
+
+riot.route.exec(f);
 
 });
