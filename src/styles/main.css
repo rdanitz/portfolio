@@ -30,28 +30,26 @@
 
 .nav2 {
   padding-left: 2vw;
-  padding-right: 2vw;
+  padding-right: 4vw;
   font-size: 2.5em;
   font-weight: lighter;
   text-align: right;
 }
 
 .project-image {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 4vw;
   padding-left: 4vw;
   padding-right: 0;
   padding-bottom: 0;
-  /* vertical-align: middle; */
+  text-align: center;
 }
 
-.project-text {
-  font-weight: lighter;
-  text-align: justify;
-  margin: auto;
-  vertical-align: middle;
+.project-descr {
+  font-family: 'BLOKKNeue-Regular', sans serif;
+  padding-top: 4vw;
+  padding-left: 2vw;
+  padding-right: 4vw;
+  padding-bottom: 0;
 }
 
 .project-header {
@@ -63,12 +61,54 @@
   text-align: left;
 }
 
-.project-descr {
+.project-text {
+  font-weight: lighter;
+  text-align: justify;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.about-portrait {
+  padding-top: 4vw;
+  padding-left: 4vw;
+  padding-right: 0;
+  padding-bottom: 2vw;
+}
+
+.about-portrait > img {
+  max-width: 100%;
+}
+
+.about-descr {
   font-family: 'BLOKKNeue-Regular', sans serif;
   padding-top: 4vw;
   padding-left: 2vw;
   padding-right: 4vw;
   padding-bottom: 0;
+}
+
+.about-header {
+  margin-top: 0;
+  border-bottom: 4px solid black;
+  font-family: 'Gill Sans', sans serif; 
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.about-cv {
+  font-weight: lighter;
+  text-align: justify;
+  margin: auto;
+}
+
+.about-abstract {
+  margin: auto;
+  padding-left: 4vw;
+  font-family: 'BLOKKNeue-Regular', sans serif; 
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-align: justify;
 }
 
 .max-height {

@@ -1,27 +1,29 @@
 <main>
-  <div if={ show == 'gallery' }>
+  <div if={ show == 'gallery' } >
     <gallery projects={ projects }
              me={ me }
-             you={ you }>
+             you={ you } >
     </gallery>
   </div>
 
-  <div if={ show == 'project' }>
-    <project bind={ project }>
+  <div if={ show == 'project' } >
+    <project bind={ project } >
     </project>
   </div>
 
+  <div if={ show == 'about' } >
+    <about bind={ me } >
+    </about>
+  </div>
+  
   <script type="coffeescript"> 
     self = @
 
     @show = 'gallery'
     
-    @me =
-      name: 'My Name'
-      portrait: ''
-
-    @you =
-      name: '@rdanitz'
+    @me = me
+    @you = you
+    @projects = projects
 
     @project =
       title: ''
@@ -30,31 +32,22 @@
       thumb: ''
       portraits: ''
 
-    @projects = projects
-
-    @to_gallery = () ->
-      self.show = 'gallery'
+    @to = (to, id) ->
+      switch to
+        when ''        then self.show = 'gallery'
+        when 'gallery' then self.show = 'gallery'
+        when 'project' 
+          self.show = 'project'
+          project = _.first (_.filter self.projects, (i) -> i.title == id)
+          self.project.title = project.title
+          self.project.description = project.description
+          self.project.thumb = project.thumb
+          self.project.portraits = project.portraits
+        when 'about' then self.show = 'about'
       riot.update()
 
-    @to_project = (to) ->
-      self.show = 'project'
-      project = _.first (_.filter self.projects, (i) -> i.title == to)
-      self.project.title = project.title
-      self.project.description = project.description
-      self.project.thumb = project.thumb
-      self.project.portraits = project.portraits
-      riot.update()
-
-    riot.route (to) ->
-      if to == ''
-        self.to_gallery()
-      else
-        self.to_project(to)
-
-    riot.route.exec (to)->
-      if to == ''
-        self.to_gallery()
-      else
-        self.to_project(to)
+    f = (to, id) -> self.to to, id
+    riot.route f 
+    riot.route.exec f
   </script>
 </main>
