@@ -116,8 +116,8 @@
 }
 
 .frame {
+  display: flex;
   display: -webkit-flex;
-  overflow: auto;
 }
 
 .frame-image {
@@ -125,6 +125,7 @@
 }
 
 .frame-text {
+  overflow: auto;
   font-family: 'BLOKKNeue-Regular', sans serif;
   font-weight: lighter;
   text-align: left;
@@ -160,6 +161,7 @@
 }
 
 .me-order {
+  order: -1;
   -webkit-order: -1;
 }
 
@@ -171,6 +173,7 @@
 }
 
 .you-order {
+  order: 1000;
   -webkit-order: 1000;
 }
 
@@ -188,66 +191,79 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  border: 0;
+  overflow: auto;
 }
+
+/* body::-webkit-scrollbar {  */
+/*   display: none;  */
+/* } */
 
 /* Rearranging based on screen size */
 
 .gallery {
+  display: flex;
   display: -webkit-flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 35.5em) {
   .me-order {
+   order: -1;
     -webkit-order: -1;
   }
 
   .frame {
-    min-height: 100vw;
-    max-height: 100vw;
+    min-height: 97.2vw;
+    max-height: 97.2vw;
   }
 }
 
 @media screen and (min-width: 35.5em) and (max-width: 48em) {
   .me-order {
+    order: -1;
     -webkit-order: -1;
   }
-  
+
   .frame {
-    min-height: 50vw;
-    max-height: 50vw;
+    min-height: 48.7vw;
+    max-height: 48.7vw;
   }
 }
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .me-order {
+    order: 7;
     -webkit-order: 7;
   }
-  
+
   .frame {
-    min-height: 33vw;
-    max-height: 33vw;
+    min-height: 32.6vw;
+    max-height: 32.6vw;
   }
 }
 
 @media screen and (min-width: 64em) and (max-width: 80em) {
   .me-order {
+    order: 9;
     -webkit-order: 9;
   }
-  
+
   .frame {
-    min-height: 25vw;
-    max-height: 25vw;
+    min-height: 24.6vw;
+    max-height: 24.6vw;
   }
 }
 
 @media screen and (min-width: 80em) {
   .me-order {
+    order: 13;
     -webkit-order: 13;
   }
-  
+
   .frame {
-    min-height: 20vw;
-    max-height: 20vw;
+    min-height: 19.7vw;
+    max-height: 19.7vw;
   }
 }
 
