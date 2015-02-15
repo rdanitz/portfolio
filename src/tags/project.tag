@@ -2,7 +2,7 @@
   <div class="pure-g">
     <div class="pure-u-3-4">
       <div class="project-image noselect2">
-        <img src={ project.portraits[current] } ></img>
+        <img width="100%" src={ project.portraits[current] } ></img>
       </div>
     </div>
    
@@ -10,7 +10,8 @@
       <div class="project-descr">
         <h1 class="project-header">{ project.title }</h1>
         <div class="project-text">
-          <p>{ project.description }</p>
+          <raw html={ project.description }>
+          </raw>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
     <div class="pure-u-2-5">
       <div class="pure-u">
         <div class="about-portrait noselect">
-          <img src="images/portrait1.png" width="100%"></img>
+          <img src={ me.portrait } width="100%"></img>
         </div>
       </div>
       <div class="pure-u">
