@@ -31,13 +31,14 @@ projects = [
       The shape of the rocks found along the shoreline was the main inspiration behind the design.
       The idea was to create a form that would resemble the nature of the surroundings, but not blend in completely to signify the spiritual importance of the Meditation Space.
     """
-    thumb: 'images/symbiont-thumb.jpg'
+    thumb: 'images/symbiont-thumb.png'
     portraits: [
       'images/symbiont-1.jpg',
       'images/symbiont-2.jpg',
       'images/symbiont-3.jpg',
-      'images/symbiont-4.jpg',      
-      'images/symbiont-5.jpg',    ]
+      'images/symbiont-4.jpg',
+      'images/symbiont-5.jpg',
       'images/symbiont-6.jpg'
+    ]
   }
 ]
