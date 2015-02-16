@@ -42,7 +42,7 @@ projects = [
     ]
   },
   {
-    title: ‘Spacecraft’
+    title: 'Spacecraft'
     abstract: """
       Spacecraft: Music in Space
     """
