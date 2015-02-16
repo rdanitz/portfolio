@@ -47,7 +47,7 @@ projects = [
       Spacecraft: Music in Space
     """
     description: """
-      <p>Year 1 began with an exploration os space. Students were asked to choose a theme for inspiration and interpret it in space through a series of small models.</p>
+      <p>Year 1 began with an exploration of space. Students were asked to choose a theme for inspiration and interpret it in space through a series of small models.</p>
       <p>I chose “Storm” - a classic from The Four Seasons by Antonio Vivaldi as my inspiration.</p>
       <p>The three conceptual models are entered around the aesthetics and atmospheres of a powerful sea storm - sharp rays of light piercing through storm-clouds, wind, waves, thunder and lighting, a feeling of tension, movement and expressive dynamics, which I found myself imagining while listening to this piece of music. </p>
     """
