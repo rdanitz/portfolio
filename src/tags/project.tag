@@ -30,5 +30,16 @@
     @project = opts.bind
     @prev = () -> self.current = (self.current - 1 + _.size self.project.portraits) % (_.size self.project.portraits)
     @next = () -> self.current = (self.current + 1) % (_.size self.project.portraits)
+
+    Mousetrap.bind 'left', () ->
+      self.prev()
+      riot.update()
+    
+    Mousetrap.bind 'right', () ->
+      self.next()
+      riot.update()
+    
+    Mousetrap.bind 'up', () ->
+      riot.route('#')
   </script>
 </project>

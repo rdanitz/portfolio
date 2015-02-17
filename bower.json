@@ -4,7 +4,8 @@
   "dependencies": {
     "pure": "~0.5.0",
     "riot": "~2.0.9",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "mousetrap": "~1.4.6"
   },
   "devDependencies": {}
 }
