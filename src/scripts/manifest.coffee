@@ -32,6 +32,28 @@ Cred try-hard irony plaid fap ethical, +1 skateboard. Lo-fi skateboard flannel a
   """
   thumb: 'images/thumb.png'
   portraits: [
-    'images/portrait2.png',
-    'images/portrait1.png'
+    {
+      img: 'images/600.png',
+      caption: 'This is a caption'
+    },
+    {
+      img: 'images/900.png'
+      caption: 'This is another caption'
+    },
+    {
+      img: 'images/600x900.png'
+      caption: 'This is another caption'
+    },
+    {
+      img: 'images/900x600.png'
+      caption: 'This is another caption'
+    },
+    {
+      img: 'images/300.png'
+      caption: 'This is another caption'
+    },
+    {
+      img: 'images/1200.png'
+      caption: 'This is another caption'
+    }
   ]
