@@ -9,9 +9,9 @@ me =
   portrait: 'images/anna-portrait.jpg'
   email: 'annasundukova@yahoo.com'
   twitter: ''
-  instagram: 'anoushk_a'
+  instagram: 'annoushk_a'
   facebook: 'anna.sundukova.1'
-  tumblr: 'styleinlife'
+  tumblr: 'styleinlife’
  
 you =
   name: 'rdanitz'
@@ -49,7 +49,7 @@ projects = [
     description: """
       <p>Year 1 began with an exploration of space. Students were asked to choose a theme for inspiration and interpret it in space through a series of small models.</p>
       <p>I chose “Storm” - a classic from The Four Seasons by Antonio Vivaldi as my inspiration.</p>
-      <p>The three conceptual models are entered around the aesthetics and atmospheres of a powerful sea storm - sharp rays of light piercing through storm-clouds, wind, waves, thunder and lighting, a feeling of tension, movement and expressive dynamics, which I found myself imagining while listening to this piece of music. </p>
+      <p>conceptual models are entered around the aesthetics and atmospheres of a powerful sea storm - sharp rays of light piercing through storm-clouds, wind, waves, thunder and lighting, a feeling of tension, movement and expressive dynamics, which I found myself imagining while listening to this piece of music. </p>
     """
     thumb: 'images/spacecraft/spacecraft-thumb.png'
     portraits: [
