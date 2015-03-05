@@ -42,6 +42,28 @@ projects = [
     ]
   },
   {
+    title: ’Urban Dwellings’
+    abstract: """
+      Urban Dwellings
+    """
+    description: """
+      <p>Year 1 final project required the design of a small structure on the coast.</p>
+      <p>Students were given full freedom to choose their programme.</p>
+      <p>The Meditation Space is a timber pod for a few people to enjoy soothing effect of the beauty of the surrounding nature.</p>
+      <p>The shape of the rocks found along the shoreline was the main inspiration behind the design.</p>
+      <p>The idea was to create a form that would resemble the nature of the surroundings, but not blend in completely to signify the spiritual importance of the Meditation Space.</p>
+    """
+    thumb: 'images/symbiont/symbiont-thumb.png'
+    portraits: [
+      'images/symbiont/symbiont-1.jpg',
+      'images/symbiont/symbiont-2.jpg',
+      'images/symbiont/symbiont-3.jpg',
+      'images/symbiont/symbiont-4.jpg',
+      'images/symbiont/symbiont-5.jpg',
+      'images/symbiont/symbiont-6.jpg'
+    ]
+  },
+  {
     title: 'Spacecraft'
     abstract: """
       Spacecraft: Music in Space
