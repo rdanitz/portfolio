@@ -1,32 +1,27 @@
 <project>
   <div class="pure-g">
-    <div class="pure-u-3-4">
-      <div class="project-image noselect2">
-        <img width="100%" src={ project.portraits[current] } ></img>
-      </div>
+    <div class="pure-u-3-4 project-image noselect">
+      <figure>
+        <img src={ project.portraits[current].img } alt={ project.portraits[current].caption } ></img>
+        <figcaption>{ project.portraits[current].caption }</figcaption>
+      </figure>
     </div>
    
-    <div class="pure-u-1-4">
-      <div class="project-descr">
-        <h1 class="project-header">{ project.title }</h1>
-        <div class="project-text">
-          <raw html={ project.description }>
-          </raw>
-        </div>
+    <div class="pure-u-1-4 project-descr">
+      <h1 class="project-header">{ project.title }</h1>
+      <div class="project-text">
+        <raw html={ project.description }>
+        </raw>
       </div>
     </div>
     
-    <div class="pure-u-3-4">
-      <div class="nav1 noselect">
-        <span><a onclick={ prev } >&lt;</a></span>&nbsp;&nbsp;
-        <span><a onclick={ next } >&gt;</a></span>
-      </div>
+    <div class="pure-u-3-4 nav1 noselect">
+      <span><a onclick={ prev } >&lt;</a></span>&nbsp;&nbsp;
+      <span><a onclick={ next } >&gt;</a></span>
     </div>
     
-    <div class="pure-u-1-4">
-      <div class="nav2 noselect">
-        <span><a href="#gallery">^</a></span>
-      </div>
+    <div class="pure-u-1-4 nav2 noselect">
+      <span><a href="#gallery">^</a></span>
     </div>
   </div>
   
@@ -36,5 +31,16 @@
     @project = opts.bind
     @prev = () -> self.current = (self.current - 1 + _.size self.project.portraits) % (_.size self.project.portraits)
     @next = () -> self.current = (self.current + 1) % (_.size self.project.portraits)
+
+    Mousetrap.bind 'left', () ->
+      self.prev()
+      riot.update()
+    
+    Mousetrap.bind 'right', () ->
+      self.next()
+      riot.update()
+    
+    Mousetrap.bind 'up', () ->
+      riot.route('#')
   </script>
 </project>
