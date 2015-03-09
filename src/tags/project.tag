@@ -2,15 +2,15 @@
   <div class="pure-g">
     <div class="pure-u-3-4 project-image noselect">
       <figure>
-        <img src={ project.portraits[current].img } alt={ project.portraits[current].caption } ></img>
-        <figcaption>{ project.portraits[current].caption }</figcaption>
+        <img src={ opts.bind.portraits[current].img } alt={ opts.bind.portraits[current].caption } ></img>
+        <figcaption>{ opts.bind.portraits[current].caption }</figcaption>
       </figure>
     </div>
    
     <div class="pure-u-1-4 project-descr">
-      <h1 class="project-header">{ project.title }</h1>
+      <h1 class="project-header">{ opts.bind.title }</h1>
       <div class="project-text">
-        <raw content={ project.description }></raw>
+        <raw content={ opts.bind.description } ></raw>
       </div>
     </div>
     
@@ -28,9 +28,10 @@
     self = @
 
     @current = 0
-    @project = opts.bind
-    @prev = () -> self.current = (self.current - 1 + _.size self.project.portraits) % (_.size self.project.portraits)
-    @next = () -> self.current = (self.current + 1) % (_.size self.project.portraits)
+    @prev = () -> self.current = (self.current - 1 + _.size self.opts.bind.portraits) % (_.size self.opts.bind.portraits)
+    @next = () -> self.current = (self.current + 1) % (_.size self.opts.bind.portraits)
+
+    Mousetrap.bind 'up', () -> riot.route('#')
 
     Mousetrap.bind 'left', () ->
       self.prev()
@@ -40,7 +41,5 @@
       self.next()
       riot.update()
 
-    Mousetrap.bind 'up', () ->
-      riot.route('#')
   </script>
 </project>

@@ -13,7 +13,7 @@ Four loko Brooklyn shabby chic, lo-fi listicle keytar master cleanse paleo synth
 
 Food truck Truffaut butcher literally. Leggings meggings meh salvia pop-up blog, cred migas paleo fixie wayfarers semiotics Wes Anderson. Lo-fi photo booth cold-pressed, crucifix fixie hoodie master cleanse scenester migas retro four dollar toast disrupt farm-to-table. Umami ennui Shoreditch migas Etsy, plaid bitters narwhal jean shorts direct trade. Taxidermy farm-to-table aesthetic ennui, hella four dollar toast wayfarers meh Schlitz plaid health goth. Craft beer Bushwick sartorial PBR&B, listicle typewriter sustainable mixtape fashion axe post-ironic fingerstache art party Helvetica XOXO heirloom. Flexitarian leggings mlkshk beard, banh mi single-origin coffee fap taxidermy wolf chillwave.
   """
-  portrait: 'images/portrait2.png'
+  portrait: 'images/600.png'
   email: 'my@email.com'
   twitter: '@my'
  

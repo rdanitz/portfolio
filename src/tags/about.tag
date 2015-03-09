@@ -3,7 +3,7 @@
     <div class="pure-u-2-5">
       <div class="pure-u">
         <div class="about-portrait noselect">
-          <img src="images/600.png" width="100%"></img>
+          <img src={ me.portrait } width="100%"></img>
         </div>
       </div>
       <div class="pure-u">
@@ -15,7 +15,7 @@
     
     <div class="pure-u-3-5">
       <div class="about-descr">
-        <h1 class="about-header">Résumé</h1>
+        <h1 class="about-header">CV</h1>
         <div class="about-cv">
           <p>{ me.cv }</p>
         </div>
