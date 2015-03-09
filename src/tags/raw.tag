@@ -1,5 +1,4 @@
 <raw>
-  <script type='coffeescript'>
-    this.root.innerHTML = opts.html
-  </script>
+  <span></span>
+  this.root.innerHTML = opts.content
 </raw>

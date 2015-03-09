@@ -7,8 +7,10 @@
   </div>
 
   <div if={ show == 'project' } >
-    <project bind={ project } >
-    </project>
+    <div each={ projects } if={ parent.current == title }>
+      <project bind={ parent.project(title) }>
+      </project>
+    </div>
   </div>
 
   <div if={ show == 'about' } >
@@ -20,33 +22,24 @@
     self = @
 
     @show = 'gallery'
-    
+
     @me = me
     @you = you
+    @current = ''
     @projects = projects
+    @project = (title) -> _.first (_.filter self.projects, (i) -> i.title == title)
 
-    @project =
-      title: ''
-      abstract: ''
-      description: ''
-      thumb: ''
-      portraits: ''
-
-    @to = (to, id) ->
+    @to = (to, name) ->
       switch to
         when ''        then self.show = 'gallery'
         when 'gallery' then self.show = 'gallery'
+        when 'about'   then self.show = 'about'
         when 'project' 
           self.show = 'project'
-          project = _.first (_.filter self.projects, (i) -> i.title == id)
-          self.project.title = project.title
-          self.project.description = project.description
-          self.project.thumb = project.thumb
-          self.project.portraits = project.portraits
-        when 'about' then self.show = 'about'
+          self.current = name 
       riot.update()
 
-    f = (to, id) -> self.to to, id
+    f = (to, name) -> self.to to, name
     riot.route f 
     riot.route.exec f
   </script>

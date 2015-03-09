@@ -10,8 +10,7 @@
     <div class="pure-u-1-4 project-descr">
       <h1 class="project-header">{ project.title }</h1>
       <div class="project-text">
-        <raw html={ project.description }>
-        </raw>
+        <raw content={ project.description }></raw>
       </div>
     </div>
     
@@ -27,6 +26,7 @@
   
   <script type="coffeescript">
     self = @
+
     @current = 0
     @project = opts.bind
     @prev = () -> self.current = (self.current - 1 + _.size self.project.portraits) % (_.size self.project.portraits)
@@ -35,11 +35,11 @@
     Mousetrap.bind 'left', () ->
       self.prev()
       riot.update()
-    
+
     Mousetrap.bind 'right', () ->
       self.next()
       riot.update()
-    
+
     Mousetrap.bind 'up', () ->
       riot.route('#')
   </script>
