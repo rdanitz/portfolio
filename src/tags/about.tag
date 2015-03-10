@@ -15,7 +15,7 @@
     
     <div class="pure-u-3-5">
       <div class="about-descr">
-        <h1 class="about-header">Résumé</h1>
+        <h1 class="about-header">CV</h1>
         <div class="about-cv">
           <p>{ me.cv }</p>
         </div>

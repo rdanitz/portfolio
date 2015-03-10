@@ -7,14 +7,11 @@
   </div>
 
   <div if={ show == 'project' } >
-    <div each={ projects } if={ parent.current == title }>
-      <project bind={ parent.project(title) }>
-      </project>
-    </div>
+    <project bind={ current } ></project>
   </div>
 
   <div if={ show == 'about' } >
-    <about bind={ me } >
+    <about bind={ me }>
     </about>
   </div>
   
@@ -22,11 +19,10 @@
     self = @
 
     @show = 'gallery'
-
     @me = me
     @you = you
-    @current = ''
     @projects = projects
+    @current = {}
     @project = (title) -> _.first (_.filter self.projects, (i) -> i.title == title)
 
     @to = (to, name) ->
@@ -36,7 +32,7 @@
         when 'about'   then self.show = 'about'
         when 'project' 
           self.show = 'project'
-          self.current = name 
+          self.current = self.project name
       riot.update()
 
     f = (to, name) -> self.to to, name
