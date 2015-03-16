@@ -25,7 +25,7 @@ projects = [
       The Meditation Space
     """
     description: """
-      <p>Year 1 final project required the design of a small structure on the coast.</p>
+      <p>Stage 1 final project required the design of a small structure on the coast.</p>
       <p>Students were given full freedom to choose their programme.</p>
       <p>The Meditation Space is a timber pod for a few people to enjoy soothing effect of the beauty of the surrounding nature.</p>
       <p>The shape of the rocks found along the shoreline was the main inspiration behind the design.</p>
@@ -65,13 +65,13 @@ projects = [
       Urban Dwellings
     """
     description: """
-      <p>Year 1 final project required the design of a small structure on the coast.</p>
-      <p>Students were given full freedom to choose their programme.</p>
-      <p>The Meditation Space is a timber pod for a few people to enjoy soothing effect of the beauty of the surrounding nature.</p>
-      <p>The shape of the rocks found along the shoreline was the main inspiration behind the design.</p>
-      <p>The idea was to create a form that would resemble the nature of the surroundings, but not blend in completely to signify the spiritual importance of the Meditation Space.</p>
+      <p>During the final Stage 2 project students worked in groups of 3 to collectively develop a design for 12 dwellings on an open square just outside the Scottish Maritime Museum in Irvine - a small town on the West Coast of Scotland.</p>
+      <p>Recognising the challenge of building private dwellings directly opposite a prominent museum building, as a group we decided to address it in a </p>
+      <p></p>
+      <p></p>
+      <p></p>
     """
-    thumb: 'images/symbiont/symbiont-thumb.png'
+    thumb: 'images/dwelling/dwelling-thumb.png'
     portraits: [
       {
         img: 'images/symbiont/symbiont-1.jpg',
@@ -105,9 +105,15 @@ projects = [
       Spacecraft: Music in Space
     """
     description: """
+<<<<<<< Updated upstream
       <p>Year 1 began with an exploration of space. Students were asked to choose a theme for inspiration and interpret it in space through a series of small models.</p>
       <p>I chose “Storm” &ndash; a classic from The Four Seasons by Antonio Vivaldi as my inspiration.</p>
       <p>The three Conceptual models are entered around the aesthetics and atmospheres of a powerful sea storm &ndash; sharp rays of light piercing through storm-clouds, wind, waves, thunder and lighting, a feeling of tension, movement and expressive dynamics, which I found myself imagining while listening to this piece of music. </p>
+=======
+      <p>Stage 1 began with an exploration of space. Students were asked to choose a theme for inspiration and interpret it in space through a series of small models.</p>
+      <p>I chose “Storm” - a classic from The Four Seasons by Antonio Vivaldi as my inspiration.</p>
+      <p>conceptual models are entered around the aesthetics and atmospheres of a powerful sea storm - sharp rays of light piercing through storm-clouds, wind, waves, thunder and lighting, a feeling of tension, movement and expressive dynamics, which I found myself imagining while listening to this piece of music. </p>
+>>>>>>> Stashed changes
     """
     thumb: 'images/spacecraft/spacecraft-thumb.png'
     portraits: [
