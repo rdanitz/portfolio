@@ -3,8 +3,10 @@
 me =
   name: 'Anna Sundukova'
   abstract: """
+    <p>This is <em>about me</em>.</p>
   """
   cv: """
+    <p>This is my <b>CV</b>.</p>
   """
   portrait: 'images/anna-portrait.jpg'
   email: 'annasundukova@yahoo.com'

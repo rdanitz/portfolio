@@ -3,12 +3,12 @@
     <div class="pure-u-2-5">
       <div class="pure-u">
         <div class="about-portrait noselect">
-          <img src={ me.portrait } width="100%"></img>
+          <img riot-src={ me.portrait } width="100%"></img>
         </div>
       </div>
       <div class="pure-u">
         <div class="about-abstract">
-          { me.abstract }
+          <raw content={ me.abstract }></raw>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
       <div class="about-descr">
         <h1 class="about-header">CV</h1>
         <div class="about-cv">
-          <p>{ me.cv }</p>
+          <raw content={ me.cv }></raw>
         </div>
       </div>
       

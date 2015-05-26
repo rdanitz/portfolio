@@ -10,7 +10,7 @@
          style="order: { 2 * parent.index(title) }; -webkit-order: { 2 * parent.index(title) };" 
          each={ projects } >
       <div class="frame-image noselect">
-        <img src={ thumb } width="100%"></img>
+        <img riot-src={ thumb } width="100%"></img>
       </div>
       <div class="frame-text">
         <p><a href="#project/{ title }">{ abstract }</a></p>

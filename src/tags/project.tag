@@ -2,7 +2,7 @@
   <div class="pure-g">
     <div class="pure-u-3-4 project-image noselect">
       <figure>
-        <img src={ opts.bind.portraits[current].img } alt={ opts.bind.portraits[current].caption } ></img>
+        <img riot-src={ opts.bind.portraits[current].img } alt={ opts.bind.portraits[current].caption } ></img>
         <figcaption>{ opts.bind.portraits[current].caption }</figcaption>
       </figure>
     </div>
