@@ -91,22 +91,38 @@
 }
 
 .about-portrait {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 5em;
+  left: 0;
   padding-top: 4vw;
   padding-left: 4vw;
   padding-right: 0;
-  padding-bottom: 2vw;
+  padding-bottom: 0;
+  text-align: center;
+  overflow: hidden;
 }
 
 .about-portrait > img {
+  display: block;
+  width: auto;
+  height: auto;
   max-width: 100%;
+  max-height: 75vh;
 }
 
 .about-descr {
-  font-family: 'Gill Sans', sans serif;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 5em;
+  right: 0;
   padding-top: 4vw;
   padding-left: 2vw;
   padding-right: 4vw;
   padding-bottom: 0;
+  overflow: auto;
 }
 
 .about-header {
@@ -119,14 +135,22 @@
 }
 
 .about-cv {
+  font-family: 'Gill Sans', sans serif; 
+  font-size: 1em;
   font-weight: lighter;
   text-align: justify;
   margin: auto;
+  vertical-align: middle;
 }
 
 .about-abstract {
-  margin: auto;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4em;
   padding-left: 4vw;
+  padding-right: 0;
   font-family: 'Gill Sans', sans serif; 
   font-size: 1.5em;
   font-weight: lighter;
