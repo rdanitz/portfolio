@@ -1,7 +1,7 @@
 <raw>
   <span></span>
 
-  <script type="coffeescript">
+  <script type="coffee">
     @updateContent = () -> @root.innerHTML = opts.content
     @on 'update', () -> @updateContent()
     @updateContent()

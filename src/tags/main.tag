@@ -15,7 +15,7 @@
     </about>
   </div>
   
-  <script type="coffeescript"> 
+  <script type="coffee"> 
     self = @
 
     @show = 'gallery'

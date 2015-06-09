@@ -24,7 +24,7 @@
     </div>
   </div>
   
-  <script type="coffeescript">
+  <script type="coffee">
     self = @
 
     @current = 0
