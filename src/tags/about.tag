@@ -1,7 +1,7 @@
 <about>
   <div class="pure-g">
     <div class="pure-u-2-5 about-portrait noselect">
-      <img src="images/me.jpg"></img>
+      <img src="images/me.jpeg"></img>
     </div>
     
     <div class="pure-u-3-5 about-descr">
