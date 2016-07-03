@@ -23,7 +23,7 @@
     @you = you
     @projects = projects
     @current = {}
-    @project = (title) -> _.first (_.filter self.projects, (i) -> i.title == title)
+    @project = (name) -> _.first (_.filter self.projects, (i) -> i.name == name)
 
     @to = (to, name) ->
       switch to

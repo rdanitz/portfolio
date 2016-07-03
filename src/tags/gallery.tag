@@ -35,6 +35,5 @@
     @me = opts.me
     @you = opts.you
     @projects = opts.projects
-    @index = (title) -> _.indexOf (_.pluck self.projects, 'title'), title
   </script>
 </gallery>

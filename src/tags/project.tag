@@ -2,8 +2,8 @@
   <div class="pure-g">
     <div class="pure-u-3-4 project-image noselect">
       <figure>
-        <img riot-src={ opts.bind.portraits[current].img } alt={ opts.bind.portraits[current].caption } ></img>
-        <figcaption>{ opts.bind.portraits[current].caption }</figcaption>
+        <img src="images/{ opts.bind.name }/{ current }.jpeg" ></img>
+        <figcaption></figcaption>
       </figure>
     </div>
    
@@ -26,10 +26,10 @@
   
   <script type="coffeescript">
     self = @
+    self.current = 0
 
-    @current = 0
-    @prev = () -> self.current = (self.current - 1 + _.size self.opts.bind.portraits) % (_.size self.opts.bind.portraits)
-    @next = () -> self.current = (self.current + 1) % (_.size self.opts.bind.portraits)
+    @prev = () -> self.current = (self.current - 1 + opts.bind.images) % opts.bind.images || 0
+    @next = () -> self.current = (self.current + 1) % opts.bind.images || 0
 
     Mousetrap.bind 'up', () -> riot.route('#')
 
