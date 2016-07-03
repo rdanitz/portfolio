@@ -37,6 +37,6 @@
 
     f = (to, name) -> self.to to, name
     riot.route f 
-    riot.route.exec f
+    riot.route.start true
   </script>
 </main>
