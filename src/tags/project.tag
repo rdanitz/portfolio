@@ -2,7 +2,7 @@
   <div class="pure-g">
     <div class="pure-u-3-4 project-image noselect">
       <figure>
-        <img src="images/{ opts.bind.name }/{ current }.jpeg" ></img>
+        <img src="images/{ opts.bind.name }/{ current }.jpg" ></img>
         <figcaption></figcaption>
       </figure>
     </div>
