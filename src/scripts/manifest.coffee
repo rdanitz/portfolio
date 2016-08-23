@@ -20,6 +20,18 @@ you =
   github: 'rdanitz'
 
 projects = [
+    {
+    name: 'elvis'
+    title: 'Last Days of Elvis Album Art'
+    abstract: """
+      Album Art
+    """
+    description: """
+      <p>Album art commissioned by Berlin-based indie band Last Days of Elvis for their EP "Oh Dearism", released July 2016.</p>
+      <p>Enigmatic, viscous, eclectic, at times disturbing, at times romantic, a bit equivocal, a bit discomforting, but very soulful. All that, which you find in their music.</p>
+    """
+    images: 2
+  },
   {
     name: 'simply-berlin-zine'
     title: 'Simply Berlin Zine'
