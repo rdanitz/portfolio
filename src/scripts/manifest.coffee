@@ -20,7 +20,7 @@ you =
   github: 'rdanitz'
 
 projects = [
-    {
+  {
     name: 'elvis'
     title: 'Last Days of Elvis Album Art'
     abstract: """
