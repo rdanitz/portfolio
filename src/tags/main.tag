@@ -22,7 +22,7 @@
     @me = me
     @you = you
     @projects = projects
-    @current = {}
+    @current = projects[0]
     @project = (name) -> _.first (_.filter self.projects, (i) -> i.name == name)
 
     @to = (to, name) ->

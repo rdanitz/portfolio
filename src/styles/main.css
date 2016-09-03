@@ -171,8 +171,6 @@
 
 .frame {
   position: relative;
-  display: flex;
-  display: -webkit-flex;
   padding: 2em;
 }
 
@@ -180,26 +178,22 @@
   width: 100%;
 }
 
-.frame-text-container {
+.frame-underlay {
+  position: absolute;
   display: flex;
-  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color:rgba(255, 255, 255, 0.7);
 }
 
 .frame-text {
-  /* overflow: auto; */
-  background: white;
-  position: absolute;
-  top: 4em;
-  right: 4em;
-  left: 4em;
+  margin: auto;
   font-family: 'Gill Sans', sans serif;
   font-weight: lighter;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: lighter;
-  /* margin: 2em; */
-  margin: auto;
-  padding: 0 1em 0 1em;
-  text-align: center;
 }
 
 /* on hover over project picture -> show project description */
@@ -208,7 +202,7 @@
   display: block;
 }
 
-.frame > .frame-text {
+.frame > .frame-underlay {
   display: none;
 }
 
@@ -216,8 +210,8 @@
 /*   display: none; */
 /* } */
 
-.frame:hover > .frame-text {
-  display: block;
+.frame:hover > .frame-underlay {
+  display: flex;
 }
 
 .me {
@@ -259,9 +253,9 @@ body, html {
   overflow: auto;
 }
 
-/* body::-webkit-scrollbar {  */
-/*   display: none;  */
-/* } */
+body::-webkit-scrollbar { 
+  display: none; 
+}
 
 .gallery {
   display: flex;

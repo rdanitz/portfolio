@@ -7,20 +7,15 @@
         </div>
       </div>
 
-      <myframe project={ projects[0] } />
-      <myframe project={ projects[1] } />
+      <myframe each={ projects.slice(0, n/3) } />
     </div>
 
     <div class="pure-u-1-3">
-      <myframe project={ projects[2] } />
-      <myframe project={ projects[3] } />
-      <myframe project={ projects[4] } />
+      <myframe each={ projects.slice(n/3, (2*n)/3) } />
     </div>
 
     <div class="pure-u-1-3">
-      <myframe project={ projects[5] } />
-      <myframe project={ projects[6] } />
-      <myframe project={ projects[7] } />
+      <myframe each={ projects.slice((2*n)/3, n) } />
 
       <div class="frame">
         <div class="you">
@@ -35,5 +30,6 @@
     @me = opts.me
     @you = opts.you
     @projects = opts.projects
+    @n = projects.length
   </script>
 </gallery>
