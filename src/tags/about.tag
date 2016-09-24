@@ -19,9 +19,4 @@
       <span><a href="#gallery">^</a></span>
     </div>
   </div>
-  
-  <script type="coffeescript">
-    self = @
-    @me = opts.bind
-  </script>
 </about>

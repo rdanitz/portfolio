@@ -1,26 +1,20 @@
 <main>
   <div if={ show == 'gallery' } >
-    <gallery projects={ projects }
-             me={ me }
-             you={ you } >
-    </gallery>
+    <gallery projects={ projects } />
   </div>
 
   <div if={ show == 'project' } >
-    <project bind={ current } ></project>
+    <project bind={ current } />
   </div>
 
   <div if={ show == 'about' } >
-    <about bind={ me }>
-    </about>
+    <about />
   </div>
   
   <script type="coffeescript"> 
     self = @
 
     @show = 'gallery'
-    @me = me
-    @you = you
     @projects = projects
     @current = projects[0]
     @project = (name) -> _.first (_.filter self.projects, (i) -> i.name == name)

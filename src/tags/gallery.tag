@@ -1,34 +1,41 @@
 <gallery>
   <div class="pure-g gallery" >
-    <div class="pure-u-1-3">
-      <div class="frame">
-        <div class="me">
-          <span><a href="#about">{ me.name }</a></span>
-        </div>
+    <div class="small pure-u-1 pure-u-sm-1">
+      <me />
+      <myframe each={ projects } />
+      <you />
+    </div>
+
+    <div class="medium">
+      <div class="pure-u-md-1-2">
+        <me />
+        <myframe each={ projects.slice(0, n/2) } />
       </div>
 
-      <myframe each={ projects.slice(0, n/3) } />
+      <div class="pure-u-md-1-2">
+        <myframe each={ projects.slice(n/2, n) } />
+        <you />
+      </div>
     </div>
 
-    <div class="pure-u-1-3">
-      <myframe each={ projects.slice(n/3, (2*n)/3) } />
-    </div>
+    <div class="large">
+      <div class="pure-u-lg-1-3 pure-u-xl-1-3">
+        <me />
+        <myframe each={ projects.slice(0, n/3) } />
+      </div>
 
-    <div class="pure-u-1-3">
-      <myframe each={ projects.slice((2*n)/3, n) } />
+      <div class="pure-u-lg-1-3 pure-u-xl-1-3">
+        <myframe each={ projects.slice(n/3, (2*n)/3) } />
+      </div>
 
-      <div class="frame">
-        <div class="you">
-          <span><a href={ you.github } >&copy;{ you.name }</a></span>
-        </div>
+      <div class="pure-u-lg-1-3 pure-u-xl-1-3">
+        <myframe each={ projects.slice((2*n)/3, n) } />
+        <you />
       </div>
     </div>
   </div>
 
   <script type="coffeescript">
-    self = @
-    @me = opts.me
-    @you = opts.you
     @projects = opts.projects
     @n = projects.length
   </script>
