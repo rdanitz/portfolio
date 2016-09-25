@@ -281,7 +281,7 @@ body::-webkit-scrollbar {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  margin: 1em 6em 6em 6em;
+  margin: 1% 5% 5% 5%;
 }
 
 .noselect {
