@@ -57,21 +57,20 @@
   text-align: right;
 }
 
-.project-image {
+.project-images {
   box-sizing: border-box;
-  position: absolute;
   top: 0;
   bottom: 5em;
   left: 0;
   padding-top: 4vw;
   padding-left: 4vw;
   padding-right: 0;
-  padding-bottom: 0;
+  padding-bottom: 5em;
   text-align: center;
   overflow: hidden;
 }
 
-.project-image img {
+.project-images img {
   display: block;
   width: auto;
   height: auto;
@@ -79,7 +78,7 @@
   max-height: 75vh;
 }
 
-.project-image figure {
+.project-images figure {
   display: table;
   margin: auto;
   font-family: 'Gill Sans', sans serif; 
