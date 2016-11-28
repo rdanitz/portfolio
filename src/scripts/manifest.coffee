@@ -63,15 +63,25 @@ projects = [
       CAST
     """
     description: """
+       $
        <p>CAST is Centre for Advanced and Sustainable Textiles - final project of my BArch degree at the Glasgow School of Art.</p>
+       $
        <p>CAST is a space dedicated to design, research and development of sustainable textiles and materials.</p>
+       $
        <p>Designing the building, I wanted to achieve an atmosphere of a creative laboratory, where learning from each other, collaborating and exchanging ideas is the main working principle.</p> 
+       $
        <p>All spaces are designed to be visually and spatially connected to each other and to the surrounding nature to create free flow of movement and open views in and around the building, celebrating the process of creation and textile production and paying tribute to the beauty of surrounding nature.</p>
+       $
        <p>The Centre includes specialist textile workshops and designer studios, a gallery, an event venue and a cafe.</p>
+       $
        <p>A space where creativity can flourish should inspire.</p>
+       $
        <p>At the same time it should be reserved enough to avoid overwhelming emotions that are too strong and can be distractive for the creative mind.</p>
+       $
        <p>CAST is, therefore, a composition of simple orthogonal forms and reduced material palette of concrete and glass, which creates the composed atmosphere necessary to allow the creative process to unfold unrestrained against a neutral background.</p>
+       $
        <p>Flow of people, ideas, nature, views, air, sounds and scents is the magic that happens in-between the space - this happens in the orangery, which connects the separate units.</p>
+       $
     """
     images: 13
   },

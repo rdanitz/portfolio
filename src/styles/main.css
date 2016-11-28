@@ -59,13 +59,8 @@
 
 .project-images {
   box-sizing: border-box;
-  top: 0;
-  bottom: 5em;
-  left: 0;
-  padding-top: 4vw;
-  padding-left: 4vw;
-  padding-right: 0;
-  padding-bottom: 5em;
+  margin: auto;
+  padding: 2em;
   text-align: center;
   overflow: hidden;
 }
@@ -91,16 +86,8 @@
 }
 
 .project-descr {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  bottom: 5em;
-  right: 0;
-  padding-top: 4vw;
-  padding-left: 2vw;
-  padding-right: 4vw;
+  padding: 4em;
   padding-bottom: 0;
-  overflow: auto;
 }
 
 .project-header {
@@ -114,11 +101,12 @@
 
 .project-text {
   font-family: 'Gill Sans', sans serif; 
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: lighter;
-  text-align: justify;
+  text-align: center;
   margin: auto;
-  vertical-align: middle;
+  padding: 2em;
+  max-width: 66%;
 }
 
 .about-portrait {
