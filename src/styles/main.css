@@ -57,6 +57,33 @@
   text-align: right;
 }
 
+.welcome {
+  display: flex;
+  padding: 5vh;
+  height: 90vh;
+  max-height: 90vh;
+}
+
+.welcome > a {
+  margin: auto;
+  text-decoration: none;
+}
+
+.welcome > a:hover {
+  border-bottom: none;
+}
+
+.welcome > a > img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+}
+
+.welcome > a > img:hover {
+  opacity: 1.0;
+}
+
 .project-images {
   box-sizing: border-box;
   margin: auto;

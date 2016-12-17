@@ -1,4 +1,8 @@
 <main>
+  <div if={ show == 'welcome' } >
+    <welcome />
+  </div>
+
   <div if={ show == 'gallery' } >
     <gallery projects={ projects } />
   </div>
@@ -21,7 +25,7 @@
 
     @to = (to, name) ->
       switch to
-        when ''        then self.show = 'gallery'
+        when ''        then self.show = 'welcome'
         when 'gallery' then self.show = 'gallery'
         when 'about'   then self.show = 'about'
         when 'project' 
