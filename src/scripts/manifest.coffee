@@ -19,6 +19,10 @@ you =
   twitter: '@rdanitz'
   github: 'rdanitz'
 
+welcome = """
+  Some inspirational text.
+"""
+
 projects = [
   {
     name: 'elvis'
