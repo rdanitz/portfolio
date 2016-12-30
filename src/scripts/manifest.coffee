@@ -39,8 +39,15 @@ projects = [
       Simply Berlin Zine
     """
     description: """
+      <p>Simply is an independent publication about the beauty of ordinary things.</p>
+      <p>The concept of Simply is, well, simple - to speak about matters everyone can relate to, but to do it in a way, which inspires the reader to see them with new eyes.</p> 
+      <p>Made by and for those experiencing “glossy” lifestyle fatigue, Simply aims to create content, which celebrates the beauty of everyday life.</p> 
+      <p>Every issue is a collection of words and pictures dedicated to a single theme.</p>
+      <p>The first issue is dedicated to Berlin - the city where it all started.</p>
+      <p>You can check out the full version here.</p>
+      <p>Enjoy and share your thoughts!</p>
     """
-    images: 0
+    images: 6
   },
   {
     name: 'meditation-space'
