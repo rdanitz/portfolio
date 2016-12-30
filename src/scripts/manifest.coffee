@@ -33,6 +33,20 @@ projects = [
     images: 2
   },
   {
+    name: 'meditation-space'
+    title: 'Meditation Space'
+    abstract: """
+      The Meditation Space
+    """
+    description: """
+      <p>The Meditation Space is a project I developped in my first year at the Glasgow School of Art.</p>
+      <p>It is a timber pod designed for one or two people willing to relax and experience the soothing effect of silent contemplation of the beauty of surrounding nature.</p> 
+      <p>Located on a rocky seashore in Portencross, Scotland, across the sea from the Isle of Arran, the site has beautiful surroundings. The view towards Arran is especially breathtaking during sunsets... </p>
+      <p>The idea was to create a form that would resemble the nature of the surroundings, but not blend in completely to signify the spiritual importance of the Meditation Space.</p>
+    """
+    images: 7
+  },
+  {
     name: 'simply-berlin-zine'
     title: 'Simply Berlin Zine'
     abstract: """
@@ -48,20 +62,6 @@ projects = [
       <p>Enjoy and share your thoughts!</p>
     """
     images: 6
-  },
-  {
-    name: 'meditation-space'
-    title: 'Meditation Space'
-    abstract: """
-      The Meditation Space
-    """
-    description: """
-      <p>The Meditation Space is a project I developped in my first year at the Glasgow School of Art.</p>
-      <p>It is a timber pod designed for one or two people willing to relax and experience the soothing effect of silent contemplation of the beauty of surrounding nature.</p> 
-      <p>Located on a rocky seashore in Portencross, Scotland, across the sea from the Isle of Arran, the site has beautiful surroundings. The view towards Arran is especially breathtaking during sunsets... </p>
-      <p>The idea was to create a form that would resemble the nature of the surroundings, but not blend in completely to signify the spiritual importance of the Meditation Space.</p>
-    """
-    images: 7
   },
   {
     name: 'cast'
