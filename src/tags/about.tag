@@ -11,11 +11,11 @@
       </div>
     </div>
     
-    <div class="pure-u-3-4 about-abstract noselect">
-      about me
+    <div class="pure-u-2-5 about-abstract noselect">
+      <social-media></social-media>
     </div>
     
-    <div class="pure-u-1-4 nav2 noselect">
+    <div class="pure-u-3-5 nav2 noselect">
       <span><a href="#gallery">^</a></span>
     </div>
   </div>
