@@ -126,6 +126,10 @@
   max-width: 66%;
 }
 
+.project-text a {
+  font-style: italic;
+}
+
 .about {
   padding-top: 2vw;
   padding-left: 4vw;
@@ -232,7 +236,7 @@
 
 a {
   color: black;
-  line-height: 1.5; 
+  line-height: 1.5;
   text-decoration: none;
 }
 

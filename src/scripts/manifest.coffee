@@ -60,7 +60,7 @@ projects = [
       <p>Simply is an independent publication about the beauty of ordinary things.</p>
       <p>Made by and for those experiencing “glossy” lifestyle fatigue, Simply aims to create content, which celebrates the beauty of everyday life. The concept of Simply is, well, simple - to speak about matters everyone can relate to, but to do it in a way, which inspires the reader to see them with new eyes.</p> 
       <p>Every issue is a collection of words and pictures dedicated to a single theme. The first issue is dedicated to Berlin - the city where it all started.</p>
-      <p>You can check out the full version here. Enjoy and share your thoughts!</p>
+      <p>You can check out the full version <a href="https://issuu.com/annasundukova/docs/simplyberlinzinefull">here</a>. Enjoy and share your thoughts!</p>
     """
     images: 6
   },
