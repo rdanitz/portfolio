@@ -99,6 +99,17 @@ projects = [
     images: 0
   },
   {
+    name: 'analog-photography'
+    title: 'Analog Photography'
+    abstract: """
+      Analog Photography
+    """
+    description: """
+      <p>A collection of photos taken over the years with my vintage FED 3 Soviet 35mm camera from the 1970s. </p>
+    """
+    images: 13
+  },
+  {
     name: 'culture-kitchen'
     title: 'Culture Kitchen'
     abstract: """Culture Kitchen"""
@@ -110,17 +121,6 @@ projects = [
       <p>The concept was inspired by the principles of Food Diplomacy, which perceives food as a medium that can facilitate natural social bonding within communities. The core idea of the project is good food bringing people together.</p>
       <p>Culture Kitchen pavilion is built from used cargo shipping containers, repurposed to accommodate the various spaces.</p>
       <p>The pavillion is surrounded by allotments and gardens, which will create a fresh and lively burst of greenery on the otherwise bleak and greyish site.</p>
-    """
-    images: 0
-  },
-  {
-    name: 'analog-photography'
-    title: 'Analog Photography'
-    abstract: """
-      Analog Photography
-    """
-    description: """
-      <p>A collection of photos taken over the years with my vintage FED 3 Soviet 35mm camera from the 1970s. </p>
     """
     images: 0
   },
