@@ -8,7 +8,7 @@
       <img src="images/me.jpg"></img>
     </div>
     
-    <div class="pure-u-3-5 about-descr">
+    <div class="pure-u-3-5">
       <h1 class="about-header">CV</h1>
       <div class="about-cv">
         <raw content={ me.cv }></raw>
