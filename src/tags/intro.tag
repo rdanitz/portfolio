@@ -1,9 +1,9 @@
-<welcome>
-  <div class="welcome noselect">
-    <p class="welcome-text">
+<intro>
+  <div class="intro noselect">
+    <p class="welcome">
       <a href="#gallery">
         <raw content={ welcome }></raw>
       </a>
     </p>
   </div>
-</welcome>
+</intro>

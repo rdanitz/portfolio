@@ -57,12 +57,14 @@
   text-align: right;
 }
 
-.welcome {
-  background: url("../images/welcome.jpg") no-repeat center center fixed;
+.intro {
+  animation: background 30s cubic-bezier(0.25,0.1,0.25,1) infinite;
+  /* -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite; */
+  /* background: url("../images/intro.jpg") no-repeat center center fixed; */
   background-size: cover;
-  margin: 5vh;
-  min-width: 90vh;
-  min-height: 90vh;
+  /* margin: 5vh; */
+  /* min-width: 90vh; */
+  /* min-height: 90vh; */
   position: absolute;
   display: flex;
   top: 0;
@@ -71,7 +73,14 @@
   bottom: 0;
 }
 
-.welcome-text {
+@keyframes background {
+  0% { background-color: #f99; }
+  33% { background-color: #9f9; }  
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
+    
+.welcome {
   margin: auto;
   font-family: 'Gill Sans', sans serif;
   font-weight: lighter;
