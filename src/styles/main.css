@@ -58,7 +58,7 @@
 }
 
 .intro {
-  animation: background 30s cubic-bezier(0.25,0.1,0.25,1) infinite;
+  animation: background 60s cubic-bezier(0.17,0.67,0.83,0.67) infinite;
   /* -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite; */
   /* background: url("../images/intro.jpg") no-repeat center center fixed; */
   background-size: cover;
