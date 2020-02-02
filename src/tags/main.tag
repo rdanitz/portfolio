@@ -1,6 +1,6 @@
 <main>
-  <div if={ show == 'welcome' } >
-    <welcome />
+  <div if={ show == 'intro' } >
+    <intro />
   </div>
 
   <div if={ show == 'gallery' } >
@@ -18,14 +18,14 @@
   <script type="coffeescript"> 
     self = @
 
-    @show = 'welcome'
+    @show = 'intro'
     @projects = projects
     @current = projects[0]
     @project = (name) -> _.first (_.filter self.projects, (i) -> i.name == name)
 
     @to = (to, name) ->
       switch to
-        when ''        then self.show = 'welcome'
+        when ''        then self.show = 'intro'
         when 'gallery' then self.show = 'gallery'
         when 'about'   then self.show = 'about'
         when 'project' 
