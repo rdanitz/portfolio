@@ -111,7 +111,7 @@ projects = [
     description: """
       <p>A collection of photos taken over the years with my vintage FED 3 Soviet 35mm camera from the 1970s. </p>
     """
-    images: 13
+    images: 14
   },
   {
     name: 'culture-kitchen'
