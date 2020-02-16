@@ -1,0 +1,22 @@
+<app>
+  <div class="pure-g noselect">
+    <div class="pure-u-1">
+      <social pinterest={ props.me.pinterest } linkedin={ props.me.linkedin } instagram={ props.me.instagram }></social>
+    </div>
+    <div class="pure-u-1 intro">
+      <p class="welcome">
+        <raw html={ props.welcome } ></raw>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    import Social from './social.riot'
+
+    export default {
+      components: {
+        Social
+      }
+    }
+  </script>
+</app>

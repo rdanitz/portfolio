@@ -1,0 +1,16 @@
+<raw>
+  <span></span>
+  <script>
+    export default {
+      setInnerHTML(content) {
+        this.root.innerHTML = content
+      },
+      onMounted(props) {
+        this.setInnerHTML(props.html)
+      },
+      onUpdated(props) {
+        this.setInnerHTML(props.html)
+      }
+    }
+  </script>
+</raw>
